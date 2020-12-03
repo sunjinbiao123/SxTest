@@ -6,7 +6,7 @@
 	<property name="testng.output.dir" value="./test-output"/>
 	 <!-- 定义类路径 -->
 	<path id="classes">
-	     <fileset dir="lib" includes="*.jar"/>
+	     <fileset dir="libs" includes="*.jar"/>
 		 <pathelement location="${dest}"/>
 	</path>
 	<taskdef resource="testngtasks" classpath="libs/org.testng_7.1.0.r202001120626.jar"/>  
