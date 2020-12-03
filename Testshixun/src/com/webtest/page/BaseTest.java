@@ -1,4 +1,4 @@
-package com.webtest.page;
+﻿package com.webtest.page;
 
 
 
@@ -15,7 +15,7 @@ public class BaseTest {
 	protected WebDriver driver2;
 	@BeforeClass
 	public void initBrowser() {			
-		System.setProperty("webdriver.gecko.driver", "D:\\Demo\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Demo\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get("http://localhost/index.php/admin/authentication/sa/login");
 		
