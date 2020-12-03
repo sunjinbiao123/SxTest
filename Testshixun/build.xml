@@ -24,7 +24,7 @@
     <!-- 运行 -->
     <target name="run"  depends ="compile">
      	   	<testng outputdir="${testng.report.dir}" classpathref="classes" >
-    	  	 <xmlfileset dir="." includes="freemarker.xml"/>
+    	  	 <xmlfileset dir="." includes="testng.xml"/>
     	  	</testng>
     </target>
 </project>
