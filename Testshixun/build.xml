@@ -9,7 +9,7 @@
 	     <fileset dir="lib" includes="*.jar"/>
 		 <pathelement location="${dest}"/>
 	</path>
-	<taskdef resource="testngtasks" classpath="lib/org.testng_7.1.0.r202001120626.jar"/>  
+	<taskdef resource="testngtasks" classpath="libs/org.testng_7.1.0.r202001120626.jar"/>  
    
     <target name="clean">
         <delete dir="${dest}"/>
@@ -18,7 +18,7 @@
     <target name="compile"  depends ="clean">
         <mkdir dir ="${dest}"/>
     	  <javac srcdir="src" destdir="${dest}"  classpathref="classes" includeantruntime="on" >
-		<compilerarg line="-encoding GBK"/>
+		<compilerarg line="-encoding UTF-8"/>
 	</javac>
     </target>
     <!-- 运行 -->
