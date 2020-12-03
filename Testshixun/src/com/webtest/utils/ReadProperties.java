@@ -1,4 +1,4 @@
-﻿package com.webtest.utils;
+package com.webtest.utils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

@@ -1,4 +1,4 @@
-﻿package com.webtest.dataprovider;
+package com.webtest.dataprovider;
 
 import org.testng.annotations.Test;
 

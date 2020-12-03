@@ -1,4 +1,4 @@
-﻿package com.freemarker;
+package com.freemarker;
 
 import java.io.File;
 import java.io.StringWriter;

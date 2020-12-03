@@ -1,4 +1,4 @@
-﻿package com.webtest.test;
+package com.webtest.test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
