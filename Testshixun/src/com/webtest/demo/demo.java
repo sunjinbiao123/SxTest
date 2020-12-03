@@ -8,6 +8,6 @@ import com.webtest.page.BaseTest;
 public class demo extends BaseTest{
 	@Test
 	public void test1() {
-		System.out.println("hellssso");
+		System.out.println("hellsss1o");
 	}
 }
