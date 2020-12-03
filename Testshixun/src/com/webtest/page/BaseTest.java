@@ -22,7 +22,7 @@ public class BaseTest {
 		
 	}
 
-	//登录
+
 	public void login(String username ,String password )throws InterruptedException  {
 	Thread.sleep(1000);
 	driver.findElement(By.name("user")).sendKeys(username);
