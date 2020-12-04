@@ -15,7 +15,7 @@ import javax.mail.internet.MimeMessage;
 import properties.*; 
 
 public class MailUtil {
-	static int port = 25;
+	static int port = 465;
 	static String server = "smtp.qq.com";
 	static String from = "A";
 	static String user ;
