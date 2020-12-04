@@ -4,10 +4,10 @@
 	<test name="Nopackage">
 		<classes>
 			<class name="tests.Login_Test"></class>
-		    <!--<class name="tests.Main_Test"></class>
+		    <class name="tests.Main_Test"></class>
 			<class name="tests.NaddUserGroup_Test"></class> 
 			<class name="tests.Role_Test"></class>
-			<class name="tests.SdeleteUserGroup_Test"></class>-->
+			<class name="tests.SdeleteUserGroup_Test"></class>
 		</classes>
 		
 	</test>
