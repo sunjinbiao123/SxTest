@@ -18,7 +18,7 @@ import pages.SdeleteUserGroupPage;
 public class SdeleteUserGroup_Test extends BaseTest {
 	LoginPage loginPage;
 	SdeleteUserGroupPage sdeleteUserGroupPage;
-	String url = "http://localhost:60/index.php/admin/authentication/sa/login";
+	String url = "http://localhost/index.php/admin/authentication/sa/login";
 
 	@BeforeClass
 	public void initPage() throws InterruptedException {
@@ -39,7 +39,7 @@ public class SdeleteUserGroup_Test extends BaseTest {
 	}
 
 //É¾³ýµÄ²âÊÔÓÃÀý
-	String url5 = "http://localhost:60/index.php/userGroup/index";
+	String url5 = "http://localhost/index.php/userGroup/index";
 	@Test(priority=2)
 	public void testDeleteUserGroup() throws InterruptedException {
 		Thread.sleep(2000);

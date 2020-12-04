@@ -29,7 +29,7 @@ import page.JavaMailTestListener;
 import page.MailUtil;
 import pages.LoginPage;
 public class Login_Test extends BaseTest {
-	String url = "http://localhost:60/index.php/admin/authentication/sa/login";
+	String url = "http://localhost/index.php/admin/authentication/sa/login";
 //登录模块(4条测试用例,正确的用户名密码，正确的用户名错误的密码，正确的密码错误的用户名，错误的密码错误的用户名)
 	LoginPage loginPage;
 	@BeforeClass

@@ -16,7 +16,7 @@ import pages.MainPage;
 public class Main_Test extends BaseTest {
 	MainPage mainPage;
 	LoginPage login;
-	String url = "http://localhost:60/index.php/admin/authentication/sa/login";
+	String url = "http://localhost/index.php/admin/authentication/sa/login";
 	@BeforeClass
 	public void initPage() throws InterruptedException {
 		login =new LoginPage(driver);
@@ -36,7 +36,7 @@ public class Main_Test extends BaseTest {
 	}
 	
 //用户管理模块/添加用户模块(14条测试用例)
-	String url2 = "http://localhost:60/index.php/userManagement/index";
+	String url2 = "http://localhost/index.php/userManagement/index";
 	@Test(dataProvider = "para2", dataProviderClass = NSDataProvider.class, priority =2)
 	public void userManage(String username, String user, String fullname, String full, String email, String ema)
 			throws InterruptedException {
