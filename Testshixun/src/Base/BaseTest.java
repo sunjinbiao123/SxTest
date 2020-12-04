@@ -21,7 +21,7 @@ public class BaseTest {
 	}
 	@BeforeClass
 	public void initBrowser() {			
-		System.setProperty("webdriver.gecko.driver", "D:\\demo\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Demo\\geckodriver.exe");
 		driver = new FirefoxDriver();
 	}
 
