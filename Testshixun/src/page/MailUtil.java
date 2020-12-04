@@ -29,6 +29,7 @@ public class MailUtil {
 			props.put("mail.qq.host", server);
 			props.put("mail.qq.port", String.valueOf(port));
 			props.put("mail.qq.auth", "true");
+			system.out.println(props.get("mail.qq.port"));
 			Transport transport = null;
 			Session session = Session.getDefaultInstance(props, null);
 			transport = session.getTransport("smtp");
