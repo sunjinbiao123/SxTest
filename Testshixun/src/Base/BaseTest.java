@@ -1,34 +1,33 @@
 package Base;
 
-import org.apache.velocity.runtime.VelocimacroFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.ITestContext;
-import org.testng.TestRunner;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeMethod;
 
-import page.JavaMailTestListener;
+public class BaseTest {	
+	public static WebDriver driver;
 
-public class BaseTest {
-	protected WebDriver driver;
-	@BeforeSuite
-	public void addListener(ITestContext context) {
-		TestRunner runner = (TestRunner) context;
-	    runner.addListener(new JavaMailTestListener());
-	}
-	@BeforeClass
-	public void initBrowser() {			
-		System.setProperty("webdriver.gecko.driver", "C:\\Demo\\geckodriver.exe");
+	@BeforeMethod
+	public void initBrowser() throws InterruptedException {
+
+		System.setProperty("webdriver.gecko.driver", "C://Demo/geckodriver.exe");
 		driver = new FirefoxDriver();
+		driver.get("http://localhost/index.php/admin");
+		Thread.sleep(2000);
+		driver.findElement(By.name("user")).sendKeys("admin");
+		driver.findElement(By.name("password")).sendKeys("admin");
+		driver.findElement(By.name("login_submit")).click();
 	}
 
-	@AfterClass
-	public void close() throws InterruptedException{
-		Thread.sleep(3000);
-//		driver.quit();
+	
+	@AfterMethod
+	public void close() throws InterruptedException {
+		Thread.sleep(2000);
+		driver.quit();
 	}
 
 }
