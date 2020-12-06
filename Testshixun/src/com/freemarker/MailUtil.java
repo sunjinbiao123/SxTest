@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
 public class MailUtil {
 	static int port = 25;
 	static String server = "smtp.126.com";
-	static String from = "·¢¼şÈËĞÕÃû";
+	static String from = "å‘ä»¶äººå§“å";
 	static String user = "jmq2018011996@126.com";
 	static String password = "ZRWXCQXHKPPWJAGB";
 

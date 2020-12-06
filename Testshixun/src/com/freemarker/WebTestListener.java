@@ -15,7 +15,7 @@ import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
 
 
-//¼àÌýÆ÷
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 public class WebTestListener extends TestListenerAdapter {
 	FreemarkerTemplateEngine ft=new FreemarkerTemplateEngine();
 	
@@ -76,8 +76,7 @@ public class WebTestListener extends TestListenerAdapter {
         context.put("passedList",passedList1); 
         context.put("casesize",passedList.size()+failedList.size()); 
         context.put("failcasesize",failedList.size());
-        context.put("passcasesize", passedList.size());
-
+        context.put("passcasesize",passedList.size());
         try {
 			String content=ft.run(context);
 			return content;
