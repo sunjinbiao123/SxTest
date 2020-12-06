@@ -3,14 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase.LoginTest">
+      <class name="com.test.demo.SmokeTesting">
         <methods>
-          <include name="initPage"/>
-          <include name="initBrowser"/>
-          <include name="test_TongJi"/>
-          <include name="close"/>
+          <include name="testChangeSiteAdminName"/>
+          <include name="doAfterMethod"/>
+          <include name="testLogin"/>
+          <include name="testChangeDefaultAdminEmail"/>
+          <include name="doBeforeClass"/>
+          <include name="testContainerOn"/>
         </methods>
-      </class> <!-- testcase.LoginTest -->
+      </class> <!-- com.test.demo.SmokeTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
