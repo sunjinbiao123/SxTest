@@ -45,7 +45,7 @@ public class MainPage extends BaseTest{
 	public WebElement exit_urldescribe() {
 		return driver.findElement(By.id("endUrlDescription"));	
 	}
-	//±£´æ
+	//±£´æ°´¼ü
 	public WebElement save_form() {
 		return  driver.findElement(By.id("save-form-button"));	
 	}
