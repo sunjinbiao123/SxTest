@@ -18,7 +18,7 @@ public class SmokeTesting extends BaseTest {
 	
 	@BeforeClass
 	public void testLogin() throws InterruptedException {		
-			webtest.open("http://localhost:7777/index.php/admin/authentication/sa/login");
+			webtest.open("http://localhost/index.php/admin/authentication/sa/login");
 			webtest.type("name=user","admin" );
 			webtest.type("name=password", "admin");
 			webtest.click("name=login_submit");
