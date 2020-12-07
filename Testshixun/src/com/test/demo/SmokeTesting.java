@@ -22,7 +22,7 @@ public class SmokeTesting extends BaseTest {
 			webtest.type("name=user","admin" );
 			webtest.type("name=password", "admin");
 			webtest.click("name=login_submit");
-			webtest.click("xpath=//*[@id='welcomeModal']/div/div/div[3]/button");
+//			webtest.click("xpath=//*[@id='welcomeModal']/div/div/div[3]/button");
 			assertTrue(webtest.isElementPresent("id=notification-bell"));	
 	}
 	
