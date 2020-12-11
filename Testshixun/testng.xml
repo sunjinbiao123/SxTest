@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" verbose="1" >
-  <test name="Test1">
-  	<classes>
-  		<class name = "com.test.demo.SmokeTesting"/>
-  	</classes>
-  </test>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+	<test name="Nopackage">
+		<classes>
+			<class name="tests.Login_Test"></class>
+		    <class name="tests.Main_Test"></class>
+		    <class name="tests.Main_Test1"></class>
+			<class name="tests.AddInquire_Test"></class> 
+			<class name="tests.AddShow_Test"></class>
+		</classes>
+		
+	</test>
+	    <listeners>     
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	     
+		</listeners>
 </suite>
