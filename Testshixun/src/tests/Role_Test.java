@@ -15,7 +15,7 @@ import Base.BaseTest;
 import dataProvider.NSDataProvider;
 import pages.LoginPage;
 import pages.RolePage;
-//姓名：刘志丹  学号：2018012017
+//姓名：刘志丹  学号：2018012017 班级：8班
 //创建编辑角色(9条测试用例)
 public class Role_Test extends BaseTest{
 	LoginPage login;
