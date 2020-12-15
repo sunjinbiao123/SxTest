@@ -4,100 +4,68 @@ import org.apache.log4j.chainsaw.Main;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+//姓名：刘志丹   学号：2018012017
+//添加用户和添加虚拟用户页面对象类
 public class MainPage {
 	public WebDriver driver;
 
 	public  MainPage(WebDriver driver) {
 		this.driver=driver;
 	}
-	
-	public WebElement get_firstname() {
-		return driver.findElement(By.xpath("//*[@id=\"Participant_firstname\"]"));
+	public WebElement get_usersname() {
+		return  driver.findElement(By.id("User_Form_users_name"));
 	}
-	
-	public WebElement get_lastname() {
-		return driver.findElement(By.xpath("//*[@id=\"Participant_lastname\"]"));
+	public WebElement get_fullname() {
+		return driver.findElement(By.id("User_Form_full_name"));
 	}
-	
 	public WebElement get_email() {
-		return driver.findElement(By.xpath("//*[@id=\"Participant_email\"]"));
+		return driver.findElement(By.id("User_Form_email"));
 	}
-	
-	public WebElement get_language() {
-		return driver.findElement(By.xpath("//*[@id=\"Participant_language\"]"));
+	public WebElement get_sub() {
+		return driver.findElement(By.id("submitForm"));
 	}
-	
-	public WebElement get_hei() {
-		return driver.findElement(By.xpath("/html/body/div[5]/div[3]/div/div/div[2]/form/div[4]/div/div"));
+	public WebElement get_add() {
+		return driver.findElement(By.xpath("//button[text()=' 添加用户                    ']"));
 	}
-	
-	public WebElement get_uid() {
-		return driver.findElement(By.xpath("//*[@id=\"owner_uid\"]"));
+	public WebElement cli_true() {
+		return driver.findElement(By.xpath("//*[@id='utility_set_password']/div[2]/label[1]"));
 	}
-	
-	public WebElement get_attributes() {
-		return driver.findElement(By.xpath("//*[@id=\"Attributes_ea_7\"]"));
+	public WebElement get_password1() {
+		return driver.findElement(By.id("User_Form_password"));
 	}
-	
-	public WebElement get_save1() {
-		return driver.findElement(By.xpath("//button[text()='保存']"));
+	public WebElement get_password2() {
+		return driver.findElement(By.id("password_repeat"));
 	}
-	
-	public WebElement get_addcpp() {
-		return driver.findElement(By.xpath("//*[@id=\"addParticipantToCPP\"]"));
+	public WebElement cli_addX() {
+		return driver.findElement(By.xpath("//button[text()=' 添加虚拟用户                    ']"));
 	}
-	
-	
-	public WebElement get_defaultname() {
-		return driver.findElement(By.xpath("//*[@id=\"ParticipantAttributeName_defaultname\"]"));
+	public WebElement add_XnUser() {
+		return driver.findElement(By.id("submitForm"));
 	}
-	
-	public WebElement get_attribute_type() {
-		return driver.findElement(By.xpath("//*[@id=\"ParticipantAttributeName_attribute_type\"]"));
-	}
-	
-	public WebElement get_visual() {
-		return driver.findElement(By.xpath("/html/body/div[5]/div[3]/div/div/div[2]/form/div[3]/div/div"));
-	}
-	
-	public WebElement get_encryption() {
-		return driver.findElement(By.xpath("/html/body/div[5]/div[3]/div/div/div[2]/form/div[4]/div/div"));
-	}
-	
-	public WebElement get_addLanguage_language() {
-		return driver.findElement(By.xpath("//*[@id=\"ParticipantAttributeName_addLanguage_language\"]"));
-	}
-	
-	public WebElement get_zh_Hans() {
-		return driver.findElement(By.xpath("//*[@id=\"ParticipantAttributeNameLanguages_zh-Hans\"]"));
-	}
-	
-	public WebElement get_save2() {
-		return driver.findElement(By.xpath("//button[text()='保存']"));
-	}
-	
-	public WebElement get_addAttributeName() {
-		return driver.findElement(By.xpath("//*[@id=\"addParticipantAttributeName\"]"));
-	}
-	
-	
-	public void add_new_participant(String firstname,String lastname,String email) throws InterruptedException {
-		get_firstname().sendKeys(firstname);
-		get_lastname().sendKeys(lastname);
+	public void add_new_user(String username,String fullname,String email) throws InterruptedException {
+		get_usersname().sendKeys(username);
+		get_fullname().sendKeys(fullname);
 		get_email().sendKeys(email);
 		Thread.sleep(2000);
-		get_save1().click();
+		get_sub().click();
 		Thread.sleep(2000);
 	}
-	
-	public void add_new_property(String defaultname,String zhHans) throws InterruptedException {
-		get_defaultname().sendKeys(defaultname);
-		get_zh_Hans().sendKeys(zhHans);
-		
+	public void add_new_user_withPassword(String username,String fullname,String email,String password) throws InterruptedException {
+		get_usersname().sendKeys(username);
+		get_fullname().sendKeys(fullname);
+		get_email().sendKeys(email);
 		Thread.sleep(2000);
-		get_save2().click();
+		cli_true().click();
+		Thread.sleep(3000);
+		get_password1().sendKeys(password);
+		get_password2().sendKeys(password);
 		Thread.sleep(2000);
+		get_sub().click();
+		Thread.sleep(3000);
+	}
+	public void add_xn_user() throws InterruptedException {
+		add_XnUser().click();
+		Thread.sleep(3000);
 	}
 
 }

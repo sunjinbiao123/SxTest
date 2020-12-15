@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Nopackage"
-           tests="7"
-           failures="1"
+           tests="4"
+           failures="3"
            errors="0"
-           skipped="6"
-           time="-3214969086.949">
+           skipped="0"
+           time="33.793">
   <properties />
-            <testcase name="initBrowser" time="7.840" classname="tests.Login_Test">
-                <failure type="org.openqa.selenium.WebDriverException"
-                  message="java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:31090
+            <testcase name="login1" time="7.869" classname="tests.Login_Test">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Unable to locate element: //button[text()=&apos;关闭&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;LAPTOP-LED7K9C6&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
-Driver info: driver.version: FirefoxDriver"
+System info: host: &apos;DESKTOP-PL1AI9U&apos;, ip: &apos;10.7.86.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14452, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f6d3f71a-787e-4eda-8e1b-4ed78d937dd5
+*** Element info: {Using=xpath, value=//button[text()=&apos;关闭&apos;]}"
               >
-<![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:31090
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()='关闭']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-LED7K9C6', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
-Driver info: driver.version: FirefoxDriver
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+System info: host: 'DESKTOP-PL1AI9U', ip: '10.7.86.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14452, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f6d3f71a-787e-4eda-8e1b-4ed78d937dd5
+*** Element info: {Using=xpath, value=//button[text()='关闭']}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-  Base.BaseTest.initBrowser(BaseTest.java:25)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  tests.Login_Test.login1(Login_Test.java:51)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-  org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-  org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-  java.util.ArrayList.forEach(Unknown Source)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
   org.testng.TestRunner.privateRun(TestRunner.java:766)
   org.testng.TestRunner.run(TestRunner.java:587)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -50,47 +68,57 @@ Driver info: driver.version: FirefoxDriver
   org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
   org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
   org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:31090
-  okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-  okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-  okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-  okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-  okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-  okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-  okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-  okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-  okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-  okhttp3.RealCall.execute(RealCall.java:77)
-  org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="login1" time="8.189" classname="tests.Login_Test">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Unable to locate element: //button[text()=&apos;关闭&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-PL1AI9U&apos;, ip: &apos;10.7.86.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14452, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f6d3f71a-787e-4eda-8e1b-4ed78d937dd5
+*** Element info: {Using=xpath, value=//button[text()=&apos;关闭&apos;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()='关闭']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PL1AI9U', ip: '10.7.86.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14452, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f6d3f71a-787e-4eda-8e1b-4ed78d937dd5
+*** Element info: {Using=xpath, value=//button[text()='关闭']}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-  Base.BaseTest.initBrowser(BaseTest.java:25)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  tests.Login_Test.login1(Login_Test.java:51)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-  org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-  org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-  java.util.ArrayList.forEach(Unknown Source)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
   org.testng.TestRunner.privateRun(TestRunner.java:766)
   org.testng.TestRunner.run(TestRunner.java:587)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -106,56 +134,57 @@ Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0
   org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
   org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
   org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-  java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-  java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-  java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-  java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-  java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-  java.net.PlainSocketImpl.connect(Unknown Source)
-  java.net.SocksSocketImpl.connect(Unknown Source)
-  java.net.Socket.connect(Unknown Source)
-  okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-  okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-  okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-  okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-  okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-  okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-  okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-  okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-  okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-  okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-  okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-  okhttp3.RealCall.execute(RealCall.java:77)
-  org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="login1" time="8.855" classname="tests.Login_Test">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Unable to locate element: //button[text()=&apos;关闭&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-PL1AI9U&apos;, ip: &apos;10.7.86.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14452, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f6d3f71a-787e-4eda-8e1b-4ed78d937dd5
+*** Element info: {Using=xpath, value=//button[text()=&apos;关闭&apos;]}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()='关闭']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-PL1AI9U', ip: '10.7.86.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 14452, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f6d3f71a-787e-4eda-8e1b-4ed78d937dd5
+*** Element info: {Using=xpath, value=//button[text()='关闭']}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-  Base.BaseTest.initBrowser(BaseTest.java:25)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+  tests.Login_Test.login1(Login_Test.java:51)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-  org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-  org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-  java.util.ArrayList.forEach(Unknown Source)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
   org.testng.TestRunner.privateRun(TestRunner.java:766)
   org.testng.TestRunner.run(TestRunner.java:587)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -176,24 +205,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 
           </testcase>
   
-            <testcase name="initPage" time="0.0" classname="tests.Login_Test">
-          <skipped />
-    </testcase>
-            <testcase name="close" time="0.0" classname="tests.Login_Test">
-          <skipped />
-    </testcase>
-            <testcase name="login1" time="0.0" classname="tests.Login_Test">
-          <skipped />
-    </testcase>
-            <testcase name="login1" time="0.0" classname="tests.Login_Test">
-          <skipped />
-    </testcase>
-            <testcase name="login1" time="0.0" classname="tests.Login_Test">
-          <skipped />
-    </testcase>
-            <testcase name="login1" time="0.0" classname="tests.Login_Test">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="login1" time="8.880" classname="tests.Login_Test" />
+      
 </testsuite>

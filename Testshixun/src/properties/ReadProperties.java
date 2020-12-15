@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import org.testng.annotations.Test;
-
+//姓名：刘志丹   学号：2018012017
+//读取属性文件
 public class ReadProperties {
 
 	public static final String filePath="conf/config.properties";

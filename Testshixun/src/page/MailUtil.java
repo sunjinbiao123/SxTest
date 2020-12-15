@@ -13,7 +13,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 import properties.*; 
-
+//姓名：刘志丹   学号：2018012017
+//发送邮件类
 public class MailUtil {
 	static int port = 25;
 	static String server = "smtp.qq.com";

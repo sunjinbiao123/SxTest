@@ -12,47 +12,83 @@ import Base.BaseTest;
 import dataProvider.NSDataProvider;
 import pages.LoginPage;
 import pages.MainPage;
-
+//姓名：刘志丹  学号：2018012017
+//创建/编辑用户(27条测试用例）
 public class Main_Test extends BaseTest {
 	MainPage mainPage;
 	LoginPage login;
-	String url = "http://localhost:6032/index.php/admin/authentication/sa/login";
+	String url = "http://localhost/index.php/admin/authentication/sa/login";
 	@BeforeClass
 	public void initPage() throws InterruptedException {
 		login =new LoginPage(driver);
 		mainPage = new MainPage(driver);
 	}
-	@Test(dataProvider="paraa",dataProviderClass=NSDataProvider.class,priority=1)
+	@Test(dataProvider="para8",dataProviderClass=NSDataProvider.class,priority=1)
 	public void login(String username, String key, String password, String value) throws InterruptedException {
 		driver.get(url);
 		Thread.sleep(3000);
 		List<Map<String, String>> list = new ArrayList<Map<String, String>>();
 		Map<String, String> map = new HashMap<String, String>();
-		map.put(String.valueOf(username), String.valueOf(key));
-		map.put(String.valueOf(password), String.valueOf(value));
+		map.put(username.toString(), key.toString());
+		map.put(password.toString(), value.toString());
 		list.add(map);
 		login.login(map.get("username"), map.get("password"));
 		Thread.sleep(2000);
 	}
-
-	//参与者中央数据库模块/属性管理页面
-	String url2="http://localhost:6032/index.php/admin/participants/sa/attributeControl";
-	@Test(dataProvider = "para3", dataProviderClass = NSDataProvider.class, priority =2)
-	public void userManage1(String defaultname,String de,String zhHans,String zh) throws InterruptedException {
+	
+//用户管理模块/添加用户模块(14条测试用例)
+	String url2 = "http://localhost/index.php/userManagement/index";
+	@Test(dataProvider = "para2", dataProviderClass = NSDataProvider.class, priority =2)
+	public void userManage(String username, String user, String fullname, String full, String email, String ema)
+			throws InterruptedException {
 		driver.get(url2);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		List<Map<String, String>> list = new ArrayList<Map<String, String>>();
 		Map<String, String> map = new HashMap<String, String>();
-		map.put(String.valueOf(defaultname), String.valueOf(de));
-		map.put(String.valueOf(zhHans), String.valueOf(zh));
+		map.put(String.valueOf(username), String.valueOf(user));
+		map.put(String.valueOf(fullname), String.valueOf(full));
+		map.put(String.valueOf(email), String.valueOf(ema));
 		list.add(map);
-		mainPage.get_addAttributeName().click();
+		mainPage.get_add().click();
 		Thread.sleep(3000);
 		for (Map<String, String> map2 : list) {
-		mainPage.add_new_property(map2.get("defaultname"), map2.get("zhHans"));
-		boolean flag = driver.findElement(By.xpath("//div[text()='属性更新成功']")).isDisplayed();
-		Assert.assertTrue(flag);
+			mainPage.add_new_user(map2.get("username"), map2.get("fullname"), map2.get("email"));
+			boolean flag = driver.findElement(By.xpath("//div[text()='用户创建成功']")).isDisplayed();
+			Assert.assertTrue(flag);
 		}
 	}
-	
+
+//用户管理模块/添加用户密码测试模块(12条测试用例)
+	@Test(dataProvider = "para3", dataProviderClass = NSDataProvider.class, priority =3)
+	public void userManage2(String username, String user, String fullname, String full, String email, String ema,
+			String password, String pass) throws InterruptedException {
+		driver.get(url2);
+		Thread.sleep(2000);
+		List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+		Map<String, String> map = new HashMap<String, String>();
+		map.put(String.valueOf(username), String.valueOf(user));
+		map.put(String.valueOf(fullname), String.valueOf(full));
+		map.put(String.valueOf(email), String.valueOf(ema));
+		map.put(String.valueOf(password), String.valueOf(pass));
+		list.add(map);
+		mainPage.get_add().click();
+		Thread.sleep(3000);
+		for (Map<String, String> map2 : list) {
+			mainPage.add_new_user_withPassword(map2.get("username"), map2.get("fullname"), map2.get("email"), map2.get("password"));
+			boolean flag = driver.findElement(By.xpath("//div[text()='用户创建成功']")).isDisplayed();
+			Assert.assertTrue(flag);
+		}
+	}
+	@Test(priority=4)
+	public void addXnUser() throws InterruptedException {
+		driver.get(url2);
+		Thread.sleep(2000);
+		mainPage.cli_addX().click();
+		Thread.sleep(3000);
+		mainPage.add_xn_user();
+		Thread.sleep(4000);
+		boolean flag = driver.findElement(By.id("exportUsers")).isDisplayed();
+		Assert.assertTrue(flag);
+	}
+
 }

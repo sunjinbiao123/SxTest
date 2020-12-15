@@ -4,31 +4,31 @@
            failures="3"
            errors="0"
            skipped="0"
-           time="42.815">
+           time="33.741">
   <properties />
-            <testcase name="login1" time="9.203" classname="tests.Login_Test">
+            <testcase name="login1" time="8.212" classname="tests.Login_Test">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="Unable to locate element: #lime\-logo
+                  message="Unable to locate element: //button[text()=&apos;关闭&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;LAPTOP-LED7K9C6&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+System info: host: &apos;DESKTOP-PL1AI9U&apos;, ip: &apos;10.7.86.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1736, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
-*** Element info: {Using=id, value=lime-logo}"
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19500, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 716313ac-d514-4017-ad45-823132edaaaa
+*** Element info: {Using=xpath, value=//button[text()=&apos;关闭&apos;]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #lime\-logo
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()='关闭']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-LED7K9C6', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+System info: host: 'DESKTOP-PL1AI9U', ip: '10.7.86.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1736, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
-*** Element info: {Using=id, value=lime-logo}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19500, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 716313ac-d514-4017-ad45-823132edaaaa
+*** Element info: {Using=xpath, value=//button[text()='关闭']}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -36,14 +36,14 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-  org.openqa.selenium.By$ById.findElement(By.java:188)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
   tests.Login_Test.login1(Unknown Source)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
   org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
   org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -52,7 +52,7 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
   org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
   org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
   org.testng.TestRunner.privateRun(TestRunner.java:766)
   org.testng.TestRunner.run(TestRunner.java:587)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -71,29 +71,29 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
       </failure>
 
           </testcase>
-            <testcase name="login1" time="8.743" classname="tests.Login_Test">
+            <testcase name="login1" time="7.717" classname="tests.Login_Test">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="Unable to locate element: #lime\-logo
+                  message="Unable to locate element: //button[text()=&apos;关闭&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;LAPTOP-LED7K9C6&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+System info: host: &apos;DESKTOP-PL1AI9U&apos;, ip: &apos;10.7.86.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1736, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
-*** Element info: {Using=id, value=lime-logo}"
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19500, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 716313ac-d514-4017-ad45-823132edaaaa
+*** Element info: {Using=xpath, value=//button[text()=&apos;关闭&apos;]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #lime\-logo
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()='关闭']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-LED7K9C6', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+System info: host: 'DESKTOP-PL1AI9U', ip: '10.7.86.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1736, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
-*** Element info: {Using=id, value=lime-logo}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19500, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 716313ac-d514-4017-ad45-823132edaaaa
+*** Element info: {Using=xpath, value=//button[text()='关闭']}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -101,14 +101,14 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-  org.openqa.selenium.By$ById.findElement(By.java:188)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
   tests.Login_Test.login1(Unknown Source)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
   org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
   org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -117,7 +117,7 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
   org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
   org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
   org.testng.TestRunner.privateRun(TestRunner.java:766)
   org.testng.TestRunner.run(TestRunner.java:587)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -136,29 +136,29 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
       </failure>
 
           </testcase>
-            <testcase name="login1" time="13.691" classname="tests.Login_Test">
+            <testcase name="login1" time="8.334" classname="tests.Login_Test">
                 <failure type="org.openqa.selenium.NoSuchElementException"
-                  message="Unable to locate element: #lime\-logo
+                  message="Unable to locate element: //button[text()=&apos;关闭&apos;]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
-System info: host: &apos;LAPTOP-LED7K9C6&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+System info: host: &apos;DESKTOP-PL1AI9U&apos;, ip: &apos;10.7.86.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1736, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
-*** Element info: {Using=id, value=lime-logo}"
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19500, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 716313ac-d514-4017-ad45-823132edaaaa
+*** Element info: {Using=xpath, value=//button[text()=&apos;关闭&apos;]}"
               >
-<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #lime\-logo
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[text()='关闭']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'LAPTOP-LED7K9C6', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+System info: host: 'DESKTOP-PL1AI9U', ip: '10.7.86.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1736, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
-*** Element info: {Using=id, value=lime-logo}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 19500, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 716313ac-d514-4017-ad45-823132edaaaa
+*** Element info: {Using=xpath, value=//button[text()='关闭']}
   sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
   org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -166,14 +166,14 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
   org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
   org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-  org.openqa.selenium.By$ById.findElement(By.java:188)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:353)
   org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
   tests.Login_Test.login1(Unknown Source)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-  java.lang.reflect.Method.invoke(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
   org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
   org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -182,7 +182,7 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
   org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
   org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
   org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-  java.util.ArrayList.forEach(Unknown Source)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
   org.testng.TestRunner.privateRun(TestRunner.java:766)
   org.testng.TestRunner.run(TestRunner.java:587)
   org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
@@ -203,6 +203,6 @@ Session ID: fe45d073-ff04-4e3e-b587-52d3e234cd7e
           </testcase>
   
   
-            <testcase name="login1" time="11.178" classname="tests.Login_Test" />
+            <testcase name="login1" time="9.478" classname="tests.Login_Test" />
       
 </testsuite>

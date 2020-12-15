@@ -11,7 +11,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import page.JavaMailTestListener;
-
+//姓名：刘志丹  学号：2018012017 
+//BaseTest启动服务器类
 public class BaseTest {
 	protected WebDriver driver;
 	@BeforeSuite
@@ -21,7 +22,7 @@ public class BaseTest {
 	}
 	@BeforeClass
 	public void initBrowser() {			
-		System.setProperty("webdriver.gecko.driver", "C://Demo/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Demo\\geckodriver.exe");
 		driver = new FirefoxDriver();
 	}
 
