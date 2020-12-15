@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import page.JavaMailTestListener;
-//姓名：刘志丹  学号：2018012017 
+//姓名：刘志丹  学号：2018012017 班级：8班
 //BaseTest启动服务器类
 public class BaseTest {
 	protected WebDriver driver;
