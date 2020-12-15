@@ -17,7 +17,7 @@ import org.testng.TestListenerAdapter;
 import properties.Log;
 import properties.ReadProperties;
 
-//姓名：刘志丹 学号：2018012017
+//姓名：刘志丹 学号：2018012017 班级：8班
 //监听器类
 
 public class JavaMailTestListener extends TestListenerAdapter {
